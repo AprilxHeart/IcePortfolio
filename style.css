@@ -1,0 +1,45 @@
+/* style.css */
+html, body {
+    height: 100%;
+    margin: 0; /* ลบ margin เริ่มต้น */
+}
+
+body {
+    padding-top: 70px; /* ปรับค่าให้พอดีกับความสูงของ navbar */
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; /* สีพื้นหลังของ body */
+}
+
+.content {
+    flex: 1;
+}
+
+.navbar {
+    position: fixed; /* ทำให้ navbar ติดอยู่ที่ด้านบน */
+    top: 0; /* จัดตำแหน่งที่ด้านบน */
+    width: 100%; /* ให้กว้างเต็มหน้าจอ */
+    z-index: 1000; /* ให้แน่ใจว่า navbar อยู่เหนือเนื้อหาอื่น ๆ */
+}
+
+header {
+    padding-top: 100px; /* เพิ่มระยะห่างด้านบนให้พอดีกับความสูงของ navbar */
+}
+
+footer {
+    background-color: #f8f9fa; /* สีพื้นหลังของ footer */
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 2px solid #ccc; /* เส้นแบ่งระหว่าง body กับ footer */
+}
+
+.social-icons a {
+    color: #333;
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+
+.card img {
+    max-width: 100%; /* ปรับขนาดรูปภาพให้เข้ากับพื้นที่ */
+    height: auto; /* ให้รักษาสัดส่วนของรูปภาพ */
+}
